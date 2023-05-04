@@ -17,7 +17,6 @@ const _MongoDBStore = require("connect-mongodb-session")(_sessionExpress);
 const _port = "3000";
 const _app = _express();
 
-//const MONGODB_URI = `mongodb+srv://${process.env.MONGO_NAME}:${process.env.MONGO_PASSWORD}@cluster0.ebmp5.mongodb.net/${process.env.MONGO_CLUSTER}?retryWrites=true&w=majority`;
 const MONGODB_URI = `mongodb+srv://edgar:wvH80bkVVJGoZeym@cluster0.ph3oe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 
@@ -60,6 +59,8 @@ _app.use(_bodyParser.urlencoded({ extended: true })); // this parser will only p
 
 //allow css js files
 _app.use(_express.static(_path.join(__dirname, "public")));
+
+
 
 
 // //start sessions

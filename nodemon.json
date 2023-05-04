@@ -1,8 +1,8 @@
  {
     "env": {
         "MONGO_NAME" : "edgar",
-        "MONGO_PASSWORD" : "wvH80bkVVJGoZeym",
-        "MONGO_CLUSTER" : "myFirstDatabase",
+        "MONGO_PASSWORD" : "xAvVXk9Xas8SWWCw",
+        "MONGO_CLUSTER" : "userInfo",
         "SESSION_SECRETO" : "secretoMuySecretoQueTeBalgaMadreQueEs",
         "SENDGRID_KEY" : "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",
         "EMAIL" : "smilesbydrmiller@gmail.com",
