@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Andromeda - Evil Galaxies</title>
+    <link rel="stylesheet" href="../../CSS/styles.css">
+</head>
+<body>
+    
+    <canvas id="canvas" onkeypress="keyMove(event)"></canvas>
+
+    <div id="announcements"></div>
+
+    <ul id="playerInfo_wrapp">
+
+        <li class="playerInfo_list">
+            <div id="playerLife">&#10084; 100</div>
+            <div class="coolDownBar" id="PlayerLife_bar"></div>            
+        </li>
+
+        <li class="playerInfo_list" id="level">LVL - 1</li>
+
+        <li class="playerInfo_list" id="enemy_per_level">&#9760; (10)</li>         
+
+        <li class="playerInfo_list" id="PlayerMoney">$0</li> 
+
+        <li class="playerInfo_list" id="fps_">0FPS</li> 
+
+        <li class="playerInfo_list speacialProjectile" id="normalMissile">
+            <div class="coolDownBar" id="commonProjectile"></div>
+        </li>
+       
+
+    </ul>
+
+
+    <div id="weapons_wrap">
+
+        <button id="smartMissile" class="weapons btn">
+            <div class="coolDownBar" id="SmartProjectilw"></div>
+        </button>
+
+        <button class="weapons btn" id="Shild_wrapper">
+            <div class="coolDownBar" id="shild"></div>
+        </button>
+
+        <!-- <button class="weapons btn" id="repair_wrap">
+            <div class="coolDownBar" id="repair"></div>
+        </button> -->
+
+        <button class="weapons btn" id="menue"></button>
+
+
+    </div>
+
+
+    <!-- MAIN UI -->
+    <div id="main_UI">
+
+        <div id="title">
+            <h1>Beyond Andromeda</h1>
+            <h3>Evil Galaxies</h3>
+        </div>
+
+        <div id="centerMenu_conatiner">            
+          
+
+            <ul id="menuOptions_wrap">
+
+                <li class="options_button_wrap">
+                    <button class="options_button global_buttonSound" id="start_game">START</button>
+                </li>
+
+                <li class="options_button_wrap">
+                    <button class="options_button global_buttonSound" id="Particle_effect_btn">Particles - <span id="onOff">High</span></button>
+                </li>
+    
+                <!-- <li class="options_button_wrap">
+                    <button class="options_button global_buttonSound" id="Settings">SETTINGS</button>
+                </li> -->
+
+                <li class="options_button_wrap" id="option_inner_wrap"> 
+                    <h3>CONTROLS</h3>                   
+                    <ul id="constrolls_wrap">
+                        <li class="key">Q - <strong>&#x2622;</strong></li>
+                        <li class="key">W - <strong>&#8593;</strong></li>
+                        <li class="key">E - <strong>&#x267A;</strong></li>
+                        <li class="key">A - <strong>&#8592;</strong></li>
+                        <li class="key">S - <strong>&#8595;</strong></li>
+                        <li class="key">D - <strong>&#8594;</strong></li>
+                    </ul>
+                    <img id="mouse_img" src="../IMG/backgrounds/mouse.png" alt="mouse image">
+                </li>
+    
+                <!-- <li class="options_button_wrap">
+                    <button class="options_button global_buttonSound" id="info">INFO</button>
+                </li> -->
+                
+            </ul>
+
+        </div>        
+
+    </div>
+
+    <!-- UPGRADE UI -->
+
+    <div id="upgrade_ui_wrap">
+            <div id="closing_wrap">
+                <div id="user_money">$1000</div>
+                <div id="close_UI">&#x2716;</div>
+            </div>
+
+            <div id="middle_wrapp">
+                    <div id="ship_wrap">
+                        <img id="ship_img_ui" src="" alt="ship">                                                
+                    </div>                    
+                    <div id="ship_upgrade_wrap">
+                        <button class="global_buttonSound" id="ship_upgrade_button">$10000</button>
+                    </div>
+            </div>
+
+            <ul id="weapons_upgrades_wrap">
+
+                <li class="weapon_wrap">
+
+                    <div class="weapon_image_wrap">
+                        <img class="weapon_img_ui" src="../IMG/Icons/20.png" alt="weapon">                        
+                    </div>
+                    <span class="type">GUN - UPG</span>
+                    <div class="weapon_upgrade_wrap">
+                        <button class="upgradeButtons global_buttonSound" id="gun_">$10000 &#x2b;</button>
+                    </div>
+
+                </li>
+
+                <li class="weapon_wrap">
+
+                    <div class="weapon_image_wrap">
+                        <img class="weapon_img_ui" src="../IMG/Icons/29.png" alt="weapon">                        
+                    </div>
+                    <span class="type">MISSILE - UPG</span>
+                    <div class="weapon_upgrade_wrap">
+                        <button class="upgradeButtons global_buttonSound" id="missile_">$10000 &#x2b;</button>
+                    </div>
+
+                </li>
+
+                <li class="weapon_wrap">
+
+                    <div class="weapon_image_wrap">
+                        <img class="weapon_img_ui" src="../IMG/Icons/sheild.png" alt="weapon">                        
+                    </div>
+                    <span class="type">SHEILD - UPG</span>
+                    <div class="weapon_upgrade_wrap">
+                        <button class="upgradeButtons global_buttonSound" id="sheild">$10000 &#x2b;</button>
+                    </div>
+                    
+                </li>
+
+                <li class="weapon_wrap">
+
+                    <div class="weapon_image_wrap">
+                        <img class="weapon_img_ui" src="../IMG/Icons/repair.png" alt="weapon">                        
+                    </div>
+                    <span class="type">REPAIR - UPG</span>
+                    <div class="weapon_upgrade_wrap">
+                        <button class="upgradeButtons global_buttonSound" id="repair">$10000 &#x2b;</button>
+                    </div>
+
+                </li>
+
+            </ul>
+    </div>
+
+
+    <div id="endGame_wrap">
+
+        <table class="table_wrap">
+
+            <tr>
+                <th>LVL</th>
+                <th>Killed</th>
+                <th>Score</th>
+                <th>Money</th>
+            </tr>
+            
+            <tr>
+                <td id="lvl_"></td>
+                <td id="killed_"></td>
+                <td id="score_"></td>
+                <td id="money_"></td>
+            </tr> 
+        </table>
+
+        <a id="form" href="/">
+    
+            <input hidden value="0" type="number" name="lvl" id="lvl_input">
+            <input hidden value="0" type="number" name="kills" id="kills_input">
+            <input hidden value="0" type="number" name="score" id="score_input">
+            <input hidden value="0" type="number" name="money" id="money_input">
+            <input required type="text" name="userName" id="userName_input" maxlength="10" placeholder="create a unique name....">
+
+            <input id="submit_btn" type="submit" value="Save">            
+        
+        </a>
+
+
+    </div> 
+    
+    <div id="display_samllscreen"></div>
+
+    <!-- audio -->
+    <audio id="enemy_spawn" autoplay="true"></audio>
+
+    <!-- copyright -->
+    <div id="copyRight">        
+        <a style="color: #00c070;" href="mailto:dont_care_about_your_complaints@yahoo.com">Contact Webmaster</a>
+        <p>&copy; 2021 Beyond Andromeda</p>
+        <p>CREATED BY : Edgar A. Robledo</p>
+    </div> 
+    
+    <script language="Javascript" type="text/Javascript" src="../../JS/engine.js" defer></script> 
+    <script language="Javascript" type="text/Javascript" src="../../JS/global.js" defer></script> 
+    <script language="Javascript" type="text/Javascript" src="../../JS/asteroids.js" defer></script> 
+    <script language="Javascript" type="text/Javascript" src="../../JS/shipClasses.js" defer></script>  
+    <script language="Javascript" type="text/Javascript" src="../../JS/player.js" defer></script>  
+    <script language="Javascript" type="text/Javascript" src="../../JS/enemys.js" defer></script> 
+    <script language="Javascript" type="text/Javascript" src="../../JS/particles.js" defer></script> 
+    <script language="Javascript" type="text/Javascript" src="../../JS/projectile_particles.js" defer></script> 
+    <script language="Javascript" type="text/Javascript" src="../../JS/projectile.js" defer></script> 
+    <script language="Javascript" type="text/Javascript" src="../../JS/animate.js" defer></script>
+    <script language="Javascript" type="text/Javascript" src="../../JS/upgrade_menue.js" defer></script>
+    <script language="Javascript" type="text/Javascript" src="../../JS/menu.js" defer></script>
+    <script language="Javascript" type="text/Javascript" src="../../JS/settings.js" defer></script>
+
+
+</body>
+</html>
