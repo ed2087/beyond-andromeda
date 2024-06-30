@@ -129,22 +129,22 @@ img{
         padding: 0;
     }
         #smartMissile{
-            background: url("IMG/Icons/29.png")no-repeat center / cover,black;
+            background: url("../IMG/Icons/29.png")no-repeat center / cover,black;
         }
         #normalMissile{
-            background: url("IMG/Icons/20.png")no-repeat center / cover,black;
+            background: url("../IMG/Icons/20.png")no-repeat center / cover,black;
         }
         #Shild_wrapper{
-            background: url("IMG/Icons/sheild.png")no-repeat center / cover,black;
+            background: url("../IMG/Icons/sheild.png")no-repeat center / cover,black;
         }
         #repair_wrap{
-            background: url("IMG/Icons/repair.png")no-repeat center / cover,black;
+            background: url("../IMG/Icons/repair.png")no-repeat center / cover,black;
         }
         #menue{
-            background: url("IMG/Icons/menu.png")no-repeat center / cover,black;
+            background: url("../IMG/Icons/menu.png")no-repeat center / cover,black;
         } 
             #menue:hover{
-                background: url("IMG/Icons/menu.png")no-repeat center / cover,rgb(228 7 255 / 50%);
+                background: url("../IMG/Icons/menu.png")no-repeat center / cover,rgb(228 7 255 / 50%);
             }
 
 
@@ -156,7 +156,7 @@ img{
     z-index: 100;
     width: 100%;
     height: 100%;
-    background: url("IMG/backgrounds/ui-upgrade.jpg");
+    background: url("../IMG/backgrounds/ui-upgrade.jpg");
     display: none;
 }
     
@@ -255,7 +255,7 @@ img{
     z-index: 100;
     width: 100%;
     height: 100%;
-    background: url("IMG/backgrounds/mainMenu.jpg")no-repeat center /cover;
+    background: url("../IMG/backgrounds/mainMenu.jpg")no-repeat center /cover;
     display: flex;    
     align-items: center;
     flex-direction: column;      
@@ -355,7 +355,7 @@ img{
     top: 0;
     width: 100%;
     height: 100vh;
-    background: url("IMG/backgrounds/mainMenu.jpg")no-repeat center /cover;
+    background: url("../IMG/backgrounds/mainMenu.jpg")no-repeat center /cover;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -456,7 +456,7 @@ img{
     height: 100vh;
     z-index: 99999;   
     display: block; 
-    background: url("IMG/backgrounds/media-img.jpg")no-repeat center/cover,black;
+    background: url("../IMG/backgrounds/media-img.jpg")no-repeat center/cover,black;
 
 }
 
