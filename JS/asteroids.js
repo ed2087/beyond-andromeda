@@ -6,7 +6,7 @@ class Asteroid {
     constructor() {
         this.asteroid_index = getRandom_max_min(28, 1);
         this.img = new Image();
-        this.img.src = `../IMG/asteroids/Stones_${this.asteroid_index}.png`;
+        this.img.src = `IMG/asteroids/Stones_${this.asteroid_index}.png`;
 
         this.radius = 44;
         this.width = 119;

@@ -76,8 +76,8 @@ let trackMoney = 0;
 
 // player game logic  
 let playerScore = 0;
-let gun_fire = audioFun("../SOUND/player/gun/laser.ogg");
-let sheild_sound = audioFun("../SOUND/global/sheild-sound.mp3");
+let gun_fire = audioFun("SOUND/player/gun/laser.ogg");
+let sheild_sound = audioFun("SOUND/global/sheild-sound.mp3");
 
 ////////////////////////////////////////////////////////
 //ENEMY GLOBAL VARIABLES
@@ -93,8 +93,8 @@ let level_ = 1;
 const SAFE_DISTANCE = 300; // Example safe distance in pixels
 let currentChasingEnemy = null;
 
-let enemy_gun_sound = audioFun("../SOUND/global/enemy-gun-sound.mp3");
-let enemy_missile_defence_sound = audioFun("../SOUND/global/missile-defence-sound.mp3");
+let enemy_gun_sound = audioFun("SOUND/global/enemy-gun-sound.mp3");
+let enemy_missile_defence_sound = audioFun("SOUND/global/missile-defence-sound.mp3");
 ////////////////////////////////////////////////////////
 //GAME GLOBAL VARIABLES
 ////////////////////////////////////////////////////////
@@ -130,7 +130,7 @@ let next_toSpawn = 0;
 
 
 // boss background
-let bossSound = audioFun("../SOUND/enemy_enter_sounds/boss_music.mp3"); 
+let bossSound = audioFun("SOUND/enemy_enter_sounds/boss_music.mp3"); 
     bossSound.loop = true;
     
 ////////////////////////////////////////////////////////
@@ -139,13 +139,13 @@ let bossSound = audioFun("../SOUND/enemy_enter_sounds/boss_music.mp3");
 let backgroundClass = undefined;
 
 let background_array = [
-    "../IMG/backgrounds/background-1.jpg",
-    "../IMG/backgrounds/background-2.jpg",
-    "../IMG/backgrounds/background-3.jpg",
-    "../IMG/backgrounds/background-4.jpg",
-    "../IMG/backgrounds/background-5.jpg",
-    "../IMG/backgrounds/background-6.jpg",
-    "../IMG/backgrounds/background-7.jpg"
+    "IMG/backgrounds/background-1.jpg",
+    "IMG/backgrounds/background-2.jpg",
+    "IMG/backgrounds/background-3.jpg",
+    "IMG/backgrounds/background-4.jpg",
+    "IMG/backgrounds/background-5.jpg",
+    "IMG/backgrounds/background-6.jpg",
+    "IMG/backgrounds/background-7.jpg"
 ];
 
 class Background_ {

@@ -90,7 +90,7 @@ class Player {
 
         //shield
         this.Shild_img = new Image();
-        this.Shild_img.src = "../IMG/shields/spr_shield.png";
+        this.Shild_img.src = "IMG/shields/spr_shield.png";
         this.Shild_spriteWidth = 556 / 4;
         this.Shild_spriteHeight = 556 / 4;
         

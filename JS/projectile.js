@@ -72,8 +72,8 @@ const sendSmartMissile = () => {
 
 };
 
-let missile_audio = audioFun("../SOUND/global/missile_close.wav"); 
-let missile_audio_start = audioFun("../SOUND/global/missile.wav"); 
+let missile_audio = audioFun("SOUND/global/missile_close.wav"); 
+let missile_audio_start = audioFun("SOUND/global/missile.wav"); 
 let lockMissile_audio = false;
 let lockMIssile_start = false;
 const moveToTarget = (target) => {  

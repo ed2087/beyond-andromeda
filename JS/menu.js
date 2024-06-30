@@ -18,7 +18,7 @@ const startGame = () => {
 
         if(tick_ <= 3){
 
-            let start = audioFun("../SOUND/global/startAlarm.wav"); 
+            let start = audioFun("SOUND/global/startAlarm.wav"); 
             start.play(); 
 
         }
@@ -49,6 +49,6 @@ id_("start_game").addEventListener("click", startGame);
 /////////////////////////////////////////////////////////////
 
 
-const playBUtton_UI = (e) => audioFun("../SOUND/global/button_ui.wav").play();
+const playBUtton_UI = (e) => audioFun("SOUND/global/button_ui.wav").play();
 csl_(".global_buttonSound").forEach(btn => btn.addEventListener("click", playBUtton_UI));
 

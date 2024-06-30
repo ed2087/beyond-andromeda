@@ -114,7 +114,7 @@ const playerShoot = (e) => {
 
     let velocity_ = moveToSpot(mouseCor.x, mouseCor.y, player);
 
-    gun_fire = audioFun("../SOUND/player/gun/laser.ogg");
+    gun_fire = audioFun("SOUND/player/gun/laser.ogg");
     gun_fire.volume = 0.2;
     gun_fire.play();
 
@@ -409,7 +409,7 @@ const enemyFunctions = () => {
         if (distance_player_enemy <= obj.detectionRadius + player.radius) { // Handle firing at the player
             if (obj.fire === true) {
                 projectile_create(obj, player);
-                enemy_gun_sound = audioFun("../SOUND/global/enemy-gun-sound.mp3");
+                enemy_gun_sound = audioFun("SOUND/global/enemy-gun-sound.mp3");
                 enemy_gun_sound.play();
             }
 
@@ -419,7 +419,7 @@ const enemyFunctions = () => {
             //     } else {
             //         projectile_create(obj, player);
             //     }
-            //     enemy_gun_sound = audioFun("../SOUND/global/enemy-gun-sound.mp3");
+            //     enemy_gun_sound = audioFun("SOUND/global/enemy-gun-sound.mp3");
             //     enemy_gun_sound.play();
             // }
 
@@ -554,7 +554,7 @@ id_("money_").innerHTML = player.money;
 
 
 //projectile functions
-let missile_audio_explotion = audioFun("../SOUND/global/missile-explotion.wav");// new explotion adio for 
+let missile_audio_explotion = audioFun("SOUND/global/missile-explotion.wav");// new explotion adio for 
 const projectile_function = () => {
 
     projectiles.forEach(proj => {

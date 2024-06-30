@@ -6,7 +6,7 @@ const shipClasses = [
     {
         // ship info
         name: "X-V1",
-        src: "../IMG/player/ufo-x-v1.png",
+        src: "IMG/player/ufo-x-v1.png",
         playerLive: 100, // Health
         color: "#ff4600",
         playerSpeed_multyplier: 8, // Speed
@@ -42,7 +42,7 @@ const shipClasses = [
     {
         // ship info
         name: "X-V2",
-        src: "../IMG/player/ufo-x-v2.png",
+        src: "IMG/player/ufo-x-v2.png",
         playerLive: 150, // Health
         color: "#ab2f01",
         shipPrice: 5000,
@@ -79,7 +79,7 @@ const shipClasses = [
     {
         // ship info
         name: "X-V3",
-        src: "../IMG/player/ufo-x-v3.png",
+        src: "IMG/player/ufo-x-v3.png",
         playerLive: 200, // Health
         color: "#9157ea",
         shipPrice: 10000,
@@ -116,7 +116,7 @@ const shipClasses = [
     {
         // ship info
         name: "X-V4",
-        src: "../IMG/player/ufo-x-v4.png",
+        src: "IMG/player/ufo-x-v4.png",
         playerLive: 300, // Health
         color: "#5507c1",
         shipPrice: 20000,
@@ -183,10 +183,10 @@ const enemyClasses = {
         shipColor: "rgba(167, 111, 51, 0)", // Color of the enemy's ship
         rangeColor: "rgba(167, 111, 51, 0)", // Color of the enemy's range
         damage: 2, // Damage the enemy can inflict
-        imgSrc: "../IMG/enemy/normal-", // Image source for the enemy
-        spawnSound: "../SOUND/enemy_enter_sounds/proton1.mp3", // Sound played when the enemy spawns
+        imgSrc: "IMG/enemy/normal-", // Image source for the enemy
+        spawnSound: "SOUND/enemy_enter_sounds/proton1.mp3", // Sound played when the enemy spawns
         ammoIMG: {
-            src: "../IMG/enemy/n-missile-1.png", // Image source for the enemy's ammo
+            src: "IMG/enemy/n-missile-1.png", // Image source for the enemy's ammo
             width: 69, // Width of the ammo image
             height: 69 // Height of the ammo image
         }
@@ -212,10 +212,10 @@ const enemyClasses = {
         shipColor: "rgba(0, 163, 73, 0)",
         rangeColor: "rgba(0, 163, 73, 0)",
         damage: 2,
-        imgSrc: "../IMG/enemy/fast-",
-        spawnSound: "../SOUND/enemy_enter_sounds/proton2.mp3",
+        imgSrc: "IMG/enemy/fast-",
+        spawnSound: "SOUND/enemy_enter_sounds/proton2.mp3",
         ammoIMG: {
-            src: "../IMG/enemy/f-missile-1.png",
+            src: "IMG/enemy/f-missile-1.png",
             width: 69,
             height: 69
         }
@@ -241,10 +241,10 @@ const enemyClasses = {
         shipColor: "rgba(141, 133, 127, 0)",
         rangeColor: "rgba(141, 133, 127, 0)",
         damage: 3,
-        imgSrc: "../IMG/enemy/hard-",
-        spawnSound: "../SOUND/enemy_enter_sounds/proton3.mp3",
+        imgSrc: "IMG/enemy/hard-",
+        spawnSound: "SOUND/enemy_enter_sounds/proton3.mp3",
         ammoIMG: {
-            src: "../IMG/enemy/h-missile-1.png",
+            src: "IMG/enemy/h-missile-1.png",
             width: 69,
             height: 69
         }
@@ -270,10 +270,10 @@ const enemyClasses = {
         shipColor: "rgba(167, 111, 51, 0)",
         rangeColor: "rgba(167, 111, 51, 0)",
         damage: 2,
-        imgSrc: "../IMG/enemy/smart-normal-",
-        spawnSound: "../SOUND/enemy_enter_sounds/proton4.mp3",
+        imgSrc: "IMG/enemy/smart-normal-",
+        spawnSound: "SOUND/enemy_enter_sounds/proton4.mp3",
         ammoIMG: {
-            src: "../IMG/enemy/n-missile-2.png",
+            src: "IMG/enemy/n-missile-2.png",
             width: 69,
             height: 69
         }
@@ -299,10 +299,10 @@ const enemyClasses = {
         shipColor: "rgba(0, 163, 73, 0)",
         rangeColor: "rgba(0, 163, 73, 0)",
         damage: 2,
-        imgSrc: "../IMG/enemy/smart-fast-",
-        spawnSound: "../SOUND/enemy_enter_sounds/proton5.mp3",
+        imgSrc: "IMG/enemy/smart-fast-",
+        spawnSound: "SOUND/enemy_enter_sounds/proton5.mp3",
         ammoIMG: {
-            src: "../IMG/enemy/f-missile-2.png",
+            src: "IMG/enemy/f-missile-2.png",
             width: 69,
             height: 69
         }
@@ -328,10 +328,10 @@ const enemyClasses = {
         shipColor: "rgba(141, 133, 127, 0)",
         rangeColor: "rgba(141, 133, 127, 0)",
         damage: 4, // Reduced from 5
-        imgSrc: "../IMG/enemy/smart-hard-",
-        spawnSound: "../SOUND/enemy_enter_sounds/proton6.mp3",
+        imgSrc: "IMG/enemy/smart-hard-",
+        spawnSound: "SOUND/enemy_enter_sounds/proton6.mp3",
         ammoIMG: {
-            src: "../IMG/enemy/h-missile-2.png",
+            src: "IMG/enemy/h-missile-2.png",
             width: 69,
             height: 69
         }
@@ -357,10 +357,10 @@ const enemyClasses = {
         shipColor: "rgba(255, 0, 0, 0)",
         rangeColor: "rgba(255, 0, 0, 0)",
         damage: 20,
-        imgSrc: "../IMG/enemy/fast-",
-        spawnSound: "../SOUND/enemy_enter_sounds/proton8.mp3",
+        imgSrc: "IMG/enemy/fast-",
+        spawnSound: "SOUND/enemy_enter_sounds/proton8.mp3",
         ammoIMG: {
-            src: "../IMG/enemy/a-missile.png",
+            src: "IMG/enemy/a-missile.png",
             width: 69,
             height: 69
         }
@@ -386,10 +386,10 @@ const enemyClasses = {
         shipColor: "rgba(0, 0, 255, 0)",
         rangeColor: "rgba(0, 0, 255, 0)",
         damage: 6,
-        imgSrc: "../IMG/enemy/smart-hard-",
-        spawnSound: "../SOUND/enemy_enter_sounds/proton9.mp3",
+        imgSrc: "IMG/enemy/smart-hard-",
+        spawnSound: "SOUND/enemy_enter_sounds/proton9.mp3",
         ammoIMG: {
-            src: "../IMG/enemy/j-missile.png",
+            src: "IMG/enemy/j-missile.png",
             width: 69,
             height: 69
         }
@@ -415,10 +415,10 @@ const enemyClasses = {
         shipColor: "rgba(75, 0, 130, 0)",
         rangeColor: "rgba(75, 0, 130, 0)",
         damage: 1, // Reduced from 7
-        imgSrc: "../IMG/enemy/smart-fast-",
-        spawnSound: "../SOUND/enemy_enter_sounds/proton10.mp3",
+        imgSrc: "IMG/enemy/smart-fast-",
+        spawnSound: "SOUND/enemy_enter_sounds/proton10.mp3",
         ammoIMG: {
-            src: "../IMG/enemy/s-missile.png",
+            src: "IMG/enemy/s-missile.png",
             width: 69,
             height: 69
         }
@@ -444,10 +444,10 @@ const enemyClasses = {
         shipColor: "rgba(255, 0, 0, 0)",
         rangeColor: "rgba(255, 0, 0, 0)",
         damage: 6,
-        imgSrc: `../IMG/enemy/boss-`,
-        spawnSound: "../SOUND/enemy_enter_sounds/proton7.mp3",
+        imgSrc: `IMG/enemy/boss-`,
+        spawnSound: "SOUND/enemy_enter_sounds/proton7.mp3",
         ammoIMG: {
-            src: "../IMG/enemy/b-missile.png",
+            src: "IMG/enemy/b-missile.png",
             width: 69,
             height: 69
         }
